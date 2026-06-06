@@ -57,52 +57,6 @@
                  radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.05) 0px, transparent 50%);
 }
 
-/* Light Theme Variables */
-[data-theme="light"] {
-  --bg-main: #F8FAFC;
-  --bg-card: rgba(255, 255, 255, 0.75);
-  --bg-card-hover: rgba(255, 255, 255, 0.95);
-  --bg-modal: #FFFFFF;
-  --border-color: rgba(15, 23, 42, 0.08);
-  --border-focus: rgba(79, 70, 229, 0.5);
-  
-  --text-primary: #0F172A;
-  --text-secondary: #475569;
-  --text-muted: #94A3B8;
-  
-  --accent-primary: #4F46E5;
-  --accent-primary-hover: #4338CA;
-  --accent-primary-rgb: 79, 70, 229;
-  
-  --status-open-bg: rgba(37, 99, 235, 0.08);
-  --status-open-text: #2563EB;
-  --status-open-border: rgba(37, 99, 235, 0.2);
-  
-  --status-progress-bg: rgba(217, 119, 6, 0.08);
-  --status-progress-text: #D97706;
-  --status-progress-border: rgba(217, 119, 6, 0.2);
-  
-  --status-resolved-bg: rgba(5, 150, 105, 0.08);
-  --status-resolved-text: #059669;
-  --status-resolved-border: rgba(5, 150, 105, 0.2);
-  
-  --status-closed-bg: rgba(100, 116, 139, 0.08);
-  --status-closed-text: #64748B;
-  --status-closed-border: rgba(100, 116, 139, 0.2);
-
-  --priority-low-bg: rgba(5, 150, 105, 0.06);
-  --priority-low-text: #059669;
-  
-  --priority-medium-bg: rgba(217, 119, 6, 0.06);
-  --priority-medium-text: #D97706;
-  
-  --priority-high-bg: rgba(220, 38, 38, 0.06);
-  --priority-high-text: #DC2626;
-
-  --bg-gradient: radial-gradient(at 0% 0%, rgba(79, 70, 229, 0.05) 0px, transparent 50%),
-                 radial-gradient(at 100% 100%, rgba(37, 99, 235, 0.03) 0px, transparent 50%);
-}
-
 /* Reset and Core Layout */
 * {
   box-sizing: border-box;
@@ -117,7 +71,6 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background-image: var(--bg-gradient);
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dashboard-container {
@@ -141,7 +94,6 @@ body {
   letter-spacing: -0.025em;
   margin-bottom: 6px;
   color: var(--text-primary);
-  transition: color 0.3s ease;
 }
 
 .header-title-section p {
@@ -153,26 +105,6 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-}
-
-/* Theme Toggle Switcher */
-.theme-toggle-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: var(--border-radius-md);
-  border: 1px solid var(--border-color);
-  background: var(--bg-card);
-  color: var(--text-primary);
-  cursor: pointer;
-  transition: var(--transition-smooth);
-}
-
-.theme-toggle-btn:hover {
-  background: var(--bg-card-hover);
-  border-color: var(--text-secondary);
 }
 
 /* Premium Buttons */
