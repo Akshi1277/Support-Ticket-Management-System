@@ -1,0 +1,24 @@
+# Dependency directories
+**/node_modules/
+
+# Next.js build output
+**/.next/
+**/out/
+
+# Environment variables
+**/.env
+**/.env.local
+**/.env.production
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS metadata
+.DS_Store
+Thumbs.db
